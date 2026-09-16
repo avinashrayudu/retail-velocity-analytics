@@ -1,0 +1,16 @@
+[project]
+name = "retail-velocity-analytics"
+version = "0.2.0"
+description = "Store-level velocity, distribution, reorder risk and whitespace for a consumer brand, in DuckDB SQL."
+requires-python = ">=3.10"
+dependencies = ["duckdb>=1.0", "pandas>=2.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["velocity*"]
